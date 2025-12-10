@@ -11,4 +11,10 @@ test.describe('Handling dropdown', () => {
         const msg = await page.locator('.notification.is-success')
         await expect(msg).toContainText("Orange");
     })
+
+    test('Select multiple dropdown of heroes', async({page}) => {
+        const heroes = page.locator('#superheros')
+
+        await expect(heroes).toBeVisible()
+    })
 })
