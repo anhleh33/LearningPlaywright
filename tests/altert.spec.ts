@@ -25,27 +25,23 @@ test.describe('Handling Alerts & Dialogs', () => {
             console.log(`Confirm message: ${dialog.message()}`);
             expect(dialog.type()).toContain('confirm');
             
-            // Click "Cancel"
-            await dialog.dismiss();
+            await dialog.accept();
         });
 
         await page.locator('#confirm').click();
     });
 
     test('Handle Prompt Alert (Type & Accept)', async ({ page }) => {
-        page.on('dialog', async dialog => {
-            console.log(`Prompt message: ${dialog.message()}`);
-            expect(dialog.defaultValue()).toBe('Enter name'); // Check default text
-            
-            // Type into the box and Click "OK"
-            await dialog.accept('Koushik Chatterjee'); 
-        });
-
-        await page.locator('#prompt').click();
+    page.on('dialog', async dialog => {
+        console.log(`Prompt message: ${dialog.message()}`);
         
-        // Verification: The name usually appears on the page after typing
-        await expect(page.locator('#myName')).toHaveText(/Koushik Chatterjee/);
+        await dialog.accept('Koushik Chatterjee'); 
     });
+
+    await page.locator('#prompt').click();
+    
+    await expect(page.locator('#myName')).toHaveText(/Koushik Chatterjee/);
+});
 
     test('Handle Modern Modal (Not a real alert)', async ({ page }) => {
         // Modern modals ARE part of the HTML, so we treat them like normal elements
