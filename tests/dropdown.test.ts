@@ -69,5 +69,11 @@ test.describe('Handling dropdown', () => {
         console.log('--------------------------------------------------');
     })
 
+    test('Get selectected text', async({page}) => {
+        await page.selectOption("#country", "India")
+        const text = await page.$eval<string, HTMLSelectElement>('#country', ele => ele.value)
+        console.log(`Selected country is: ${text}`)
+        await expect(text).toBe("India")
+    })
 
 })
