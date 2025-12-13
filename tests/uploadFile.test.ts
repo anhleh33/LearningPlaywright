@@ -7,6 +7,7 @@ describe("Upload File Test", () => {
 
         await page.goto('https://www.sendgb.com/')
         await page.setInputFiles('(//input[@name="files[]"])[1]', filePath)
+        await page.waitForTimeout(10000)
     });
 
     test('Upload file using function', async ({ page }) => {
@@ -21,4 +22,8 @@ describe("Upload File Test", () => {
 
         await fileChooser.setFiles(filePaths);
     });
+
+    test.afterEach(async({page}) => {
+        await page.screenshot({path: `${Date.now()}_fs.png`, fullPage: true})
+    })
 });
