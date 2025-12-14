@@ -24,6 +24,6 @@ describe("Upload File Test", () => {
     });
 
     test.afterEach(async({page}) => {
-        await page.screenshot({path: `${Date.now()}_fs.png`, fullPage: true})
+        await page.screenshot({path: `./img/${Date.now()}_fs.png`, fullPage: true})
     })
 });

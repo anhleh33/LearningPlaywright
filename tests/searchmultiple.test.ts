@@ -14,7 +14,7 @@ test.describe('Search Git repo', () => {
         await expect(page).toHaveURL(/elements/);
         await expect(page.locator('.container.mt-5')).toBeVisible()
 
-        await page.locator("nav[role='navigation'].navbar").screenshot({path: `${Date.now()}_header.png`})
+        await page.locator("nav[role='navigation'].navbar").screenshot({path: `./img/${Date.now()}_header.png`})
     })
 
     test('Print all repos', async ({ page }) => {
@@ -35,10 +35,10 @@ test.describe('Search Git repo', () => {
         }))
         console.log(allULLs)
 
-        await page.locator('.container.mt-5').screenshot({path: Date.now() + 'repolist.png'})
+        await page.locator('.container.mt-5').screenshot({path: './img/' + Date.now() + 'repolist.png'})
     })
 
     test.afterEach(async({page}) => {
-        await page.screenshot({path: Date.now() + 'screenshot.png', fullPage: true})
+        await page.screenshot({path: './img/' + Date.now() + 'screenshot.png', fullPage: true})
     })
 })
