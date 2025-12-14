@@ -6,13 +6,19 @@ export default class LoginPage{
         this.page = page
     }
 
-    public get eleEmailTextField () {
-       const eleName = this.page.locator("input[name = 'email']")
-       return eleName
-    }
-    public get elePassTextField() {
-        return this.page.locator("input[name = 'password']")
-    }
+    eleEmailTextField = async () => 
+        await this.page.locator("input[name = 'email']")
+
+    elePassTextField = async() => 
+        await this.page.locator("input[name = 'password']")
+
+    // public get eleEmailTextField () {
+    //    const eleName = this.page.locator("input[name = 'email']")
+    //    return eleName
+    // }
+    // public get elePassTextField() {
+    //     return this.page.locator("input[name = 'password']")
+    // }
     public get eleLoginBtn() {
         return this.page.locator("//button[text()='LOGIN]")
     }
