@@ -8,7 +8,7 @@ test.describe('Handling Inputs', () => {
 
     test('Enter your full name', async ({ page }) => {
         // Modern Way: Use locator() instead of page.$
-        await page.locator('#fullName').fill('Koushik Chatterjee');
+        await page.locator("//input[@class='input is-focused']").fill('Koushik Chatterjee');
     });
 
     test('Append text to the end', async ({ page }) => {
