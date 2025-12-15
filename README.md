@@ -1,6 +1,6 @@
 Youtube video link: https://www.youtube.com/playlist?list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD
 
-# Install Jest
+# Install Jest (Javascript framework)
 Instal Jest
 ```
 npm install --save-dev jest
@@ -17,3 +17,4 @@ Test specific test file
 ```
 npm test -- <path/to/file.js>
 ```
+
