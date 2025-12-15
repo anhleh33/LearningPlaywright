@@ -6,6 +6,7 @@ import Env from '../../utils/enviroment';
 import HeaderPage from '../../page/Header.page';
 import LoginPage from '../../page/Login.page';
 import CommonFunction from '../../page/Common.page';
+import * as data from '../../data/login.cred.json';
 
 test.describe("T001", () => {
     let header: HeaderPage
@@ -24,12 +25,12 @@ test.describe("T001", () => {
         await expect(page.url()).toBe('https://letcode.in/')
         await header.clickLoginLink()
         await expect(page.url()).toBe('https://letcode.in/signin')
-        await login.enterUserName('koushik1@letcode.in')
-        await login.enterUserPassword('Pass123$')
+        await login.enterUserName(data.email)
+        await login.enterUserPassword(data.pass)
         await login.clickLoginBtn();
         const toasterText = await (await common.toaster).textContent();
         await expect(toasterText).toContain("Welcome")
-        await header.clickSignoutLink()
+        await header.clickSignoutLink() 
     })
 
     test('Login again', async({page})=> {

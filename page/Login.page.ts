@@ -25,15 +25,18 @@ export default class LoginPage{
 
     public async enterUserName(name: string){
         const ele = await this.eleEmailTextField
-        await ele.fill(name)
+        if(ele != null)
+            await ele.fill(name)
+        else 
+            throw new Error('No element, hence failed')
     }
     public async enterUserPassword(pass: string){
         const ele = await this.elePassTextField
-        await ele.fill(pass)
+        await ele?.fill(pass)
     }
     public async clickLoginBtn(){
         const ele = await this.eleLoginBtn
-        await ele.click()
+        await ele?.click()
     }
 
     public async login(username: string, pass: string){

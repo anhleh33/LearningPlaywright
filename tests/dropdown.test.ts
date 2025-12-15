@@ -75,5 +75,4 @@ test.describe('Handling dropdown', () => {
         console.log(`Selected country is: ${text}`)
         await expect(text).toBe("India")
     })
-
 })
