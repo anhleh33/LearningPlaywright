@@ -17,4 +17,7 @@ Test specific test file
 ```
 npm test -- <path/to/file.js>
 ```
-
+Retries running test case if it is failed
+```
+npx playwright test --retries=3
+```
