@@ -36,7 +36,10 @@ export default defineConfig({
     // channel: "chrome",
     trace: 'on-first-retry',
     screenshot: "only-on-failure",
-    video: "retain-on-failure"
+    video: "retain-on-failure",
+    // launchOptions: {
+    //   slowMo: 5000
+    // }
   },
 
   /* Configure projects for major browsers */
