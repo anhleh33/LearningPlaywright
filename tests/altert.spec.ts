@@ -25,7 +25,7 @@ test.describe('Handling Alerts & Dialogs', () => {
             console.log(`Confirm message: ${dialog.message()}`);
             expect(dialog.type()).toContain('confirm');
             
-            await dialog.accept();
+            await dialog.dismiss()
         });
 
         await page.locator('#confirm').click();
