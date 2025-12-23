@@ -54,66 +54,63 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "3way",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 3,
     "webServer": null
   },
   "suites": [
     {
-      "title": "skiplogin.test.ts",
-      "file": "skiplogin.test.ts",
+      "title": "auth.test.ts",
+      "file": "auth.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Skip login",
-          "file": "skiplogin.test.ts",
-          "line": 6,
-          "column": 6,
-          "specs": [
+          "title": "Handle Basic HTTP Authentication",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Saucedemo skip login",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 30000,
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9590,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-23T09:28:04.835Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 7826,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-23T09:02:57.759Z",
-                      "annotations": [],
-                      "attachments": []
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\test-results\\auth-Handle-Basic-HTTP-Authentication-chromium\\trace.zip"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "id": "e6edf67c068ebd0e1571-37bd8984dbee599c5ff6",
-              "file": "skiplogin.test.ts",
-              "line": 7,
-              "column": 9
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "f0c50cfc8142f74e2e08-d14ce34c91df4161d4e1",
+          "file": "auth.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-23T09:02:46.467Z",
-    "duration": 28679.510000000242,
+    "startTime": "2025-12-23T09:27:55.165Z",
+    "duration": 28274.185999999754,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
