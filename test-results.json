@@ -44,7 +44,7 @@
         "testDir": "C:/Users/intern.lhanh1/Desktop/LearningPlaywright/tests",
         "testIgnore": [],
         "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          "myTest.test.ts"
         ],
         "timeout": 30000
       }
@@ -59,13 +59,13 @@
   },
   "suites": [
     {
-      "title": "tracing.test.ts",
-      "file": "tracing.test.ts",
+      "title": "fixtures\\myTest.test.ts",
+      "file": "fixtures/myTest.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Tracing",
+          "title": "Test sử dụng fixture tùy chỉnh",
           "ok": true,
           "tags": [],
           "tests": [
@@ -77,15 +77,19 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2412,
+                  "duration": 1632,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "I am letcode\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-23T09:50:37.520Z",
+                  "startTime": "2025-12-23T10:21:54.139Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -93,8 +97,8 @@
               "status": "expected"
             }
           ],
-          "id": "a0e767aaccea00512c23-fa773469e69cd179b877",
-          "file": "tracing.test.ts",
+          "id": "fee6dfde436b4039c4f8-22ca89f1e4d57a8d9363",
+          "file": "fixtures/myTest.test.ts",
           "line": 3,
           "column": 5
         }
@@ -103,8 +107,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-23T09:50:27.973Z",
-    "duration": 17780.230000000003,
+    "startTime": "2025-12-23T10:21:42.852Z",
+    "duration": 18871.158999999985,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
