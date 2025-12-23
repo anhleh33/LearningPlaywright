@@ -1,0 +1,178 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\playwright.config.ts",
+    "rootDir": "C:/Users/intern.lhanh1/Desktop/LearningPlaywright/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/intern.lhanh1/Desktop/LearningPlaywright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/intern.lhanh1/Desktop/LearningPlaywright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "3way",
+    "version": "1.57.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "visual.test.ts",
+      "file": "visual.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Visual Comparison",
+          "file": "visual.test.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "toMatchSnapshot2",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 17140,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mBuffer\u001b[39m\u001b[2m).\u001b[22mtoMatchSnapshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\n  6797 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: ./leetcode_homepage.png\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mBuffer\u001b[39m\u001b[2m).\u001b[22mtoMatchSnapshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\n  6797 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: ./leetcode_homepage.png\n\n    at C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\tests\\visual.test.ts:28:13",
+                        "location": {
+                          "file": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\tests\\visual.test.ts",
+                          "column": 13,
+                          "line": 28
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({\n \u001b[90m 27 |\u001b[39m             fullPage\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m         }))\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m\"./leetcode_homepage.png\"\u001b[39m)\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m     })\n \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m })\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\tests\\visual.test.ts",
+                            "column": 13,
+                            "line": 28
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mBuffer\u001b[39m\u001b[2m).\u001b[22mtoMatchSnapshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\n  6797 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: ./leetcode_homepage.png\n\n\n\u001b[0m \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({\n \u001b[90m 27 |\u001b[39m             fullPage\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m         }))\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m\"./leetcode_homepage.png\"\u001b[39m)\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m     })\n \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m })\u001b[0m\n\u001b[2m    at C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\tests\\visual.test.ts:28:13\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-23T08:17:12.915Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "-leetcode-homepage-expected.png",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\tests\\visual.test.ts-snapshots\\-leetcode-homepage-chromium-win32.png"
+                        },
+                        {
+                          "name": "-leetcode-homepage-actual.png",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\test-results\\visual-Visual-Comparison-toMatchSnapshot2-chromium\\-leetcode-homepage-actual.png"
+                        },
+                        {
+                          "name": "-leetcode-homepage-diff.png",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\test-results\\visual-Visual-Comparison-toMatchSnapshot2-chromium\\-leetcode-homepage-diff.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\test-results\\visual-Visual-Comparison-toMatchSnapshot2-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\test-results\\visual-Visual-Comparison-toMatchSnapshot2-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\tests\\visual.test.ts",
+                        "column": 13,
+                        "line": 28
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "44956ccad138e58338e7-9be5bb2af7c9d8c2af27",
+              "file": "visual.test.ts",
+              "line": 23,
+              "column": 10
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-12-23T08:16:59.456Z",
+    "duration": 40863.91099999999,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
