@@ -71,30 +71,44 @@
           "tests": [
             {
               "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\tests\\fixtures\\myTest.test.ts",
+                    "line": 4,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 4,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1632,
+                  "status": "skipped",
+                  "duration": 1120,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "I am letcode\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-23T10:21:54.139Z",
-                  "annotations": [],
+                  "startTime": "2025-12-23T10:32:55.374Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\tests\\fixtures\\myTest.test.ts",
+                        "line": 4,
+                        "column": 10
+                      }
+                    }
+                  ],
                   "attachments": []
                 }
               ],
-              "status": "expected"
+              "status": "skipped"
             }
           ],
           "id": "fee6dfde436b4039c4f8-22ca89f1e4d57a8d9363",
@@ -107,10 +121,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-23T10:21:42.852Z",
-    "duration": 18871.158999999985,
-    "expected": 1,
-    "skipped": 0,
+    "startTime": "2025-12-23T10:32:45.971Z",
+    "duration": 10710.481000000145,
+    "expected": 0,
+    "skipped": 1,
     "unexpected": 0,
     "flaky": 0
   }
