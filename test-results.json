@@ -54,18 +54,18 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "3way",
     "version": "1.57.0",
-    "workers": 3,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "auth.test.ts",
-      "file": "auth.test.ts",
+      "title": "tracing.test.ts",
+      "file": "tracing.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Handle Basic HTTP Authentication",
+          "title": "Tracing",
           "ok": true,
           "tags": [],
           "tests": [
@@ -77,30 +77,24 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 6,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9590,
+                  "duration": 2412,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-23T09:28:04.835Z",
+                  "startTime": "2025-12-23T09:50:37.520Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\test-results\\auth-Handle-Basic-HTTP-Authentication-chromium\\trace.zip"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "f0c50cfc8142f74e2e08-d14ce34c91df4161d4e1",
-          "file": "auth.test.ts",
+          "id": "a0e767aaccea00512c23-fa773469e69cd179b877",
+          "file": "tracing.test.ts",
           "line": 3,
           "column": 5
         }
@@ -109,8 +103,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-23T09:27:55.165Z",
-    "duration": 28274.185999999754,
+    "startTime": "2025-12-23T09:50:27.973Z",
+    "duration": 17780.230000000003,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
