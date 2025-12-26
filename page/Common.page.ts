@@ -6,7 +6,7 @@ export default class CommonFunction {
         this.page = page
     }
 
-    toaster = async() => {
+    toaster = async () => {
         await this.page.waitForSelector("div[role='alertdialog']");
     }
     // public async verifyToastMessage(){
