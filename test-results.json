@@ -81,10 +81,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 15,
+                  "workerIndex": 16,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9850,
+                  "duration": 9820,
                   "errors": [],
                   "stdout": [
                     {
@@ -99,7 +99,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-27T09:24:30.960Z",
+                  "startTime": "2025-12-27T09:30:27.242Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -109,7 +109,7 @@
           ],
           "id": "c3dcbd281f060e11de03-60cfc4388ebdd196be58",
           "file": "youtube.test.ts",
-          "line": 7,
+          "line": 8,
           "column": 9
         },
         {
@@ -125,10 +125,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 15,
+                  "workerIndex": 16,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8932,
+                  "duration": 9147,
                   "errors": [],
                   "stdout": [
                     {
@@ -143,7 +143,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-27T09:24:40.872Z",
+                  "startTime": "2025-12-27T09:30:37.121Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -153,7 +153,51 @@
           ],
           "id": "c3dcbd281f060e11de03-ce5f0f39fafe982cc70a",
           "file": "youtube.test.ts",
-          "line": 7,
+          "line": 8,
+          "column": 9
+        },
+        {
+          "title": "Calculate ytb playlist duration - 3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9169,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33m76\u001b[39m\n"
+                    },
+                    {
+                      "text": "Total minutes: 1169.8499999999997\n"
+                    },
+                    {
+                      "text": "Selenium Java - Tamil - YouTube --> 19h 29m 50\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-27T09:30:46.288Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c3dcbd281f060e11de03-f7ff569dc383c0a62c4c",
+          "file": "youtube.test.ts",
+          "line": 8,
           "column": 9
         }
       ]
@@ -161,9 +205,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-27T09:24:28.486Z",
-    "duration": 21357.91200000001,
-    "expected": 2,
+    "startTime": "2025-12-27T09:30:25.173Z",
+    "duration": 30320.732000000076,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

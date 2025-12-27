@@ -2,7 +2,9 @@ import { test } from '@playwright/test'
 import { time } from 'console'
 import { setTimeout } from 'timers/promises'
 
-const list = ["https://www.youtube.com/playlist?list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD", "https://www.youtube.com/playlist?list=PL699Xf-_ilW6KgK-S1l9ynOnBGiZl2Bsk"]
+const list = ["https://www.youtube.com/playlist?list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD", 
+    "https://www.youtube.com/playlist?list=PL699Xf-_ilW6KgK-S1l9ynOnBGiZl2Bsk", 
+    "https://www.youtube.com/playlist?list=PL699Xf-_ilW6vI9FHmePi1TvKyzYATgXi"]
 list.forEach((playlistUrl, index) => {
     test(`Calculate ytb playlist duration - ${index + 1}`, async ({ page }) => {
         // const url = 'https://www.youtube.com/playlist?list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD'
