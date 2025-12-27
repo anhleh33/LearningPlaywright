@@ -1,6 +1,4 @@
 import { test } from '@playwright/test'
-import { time } from 'console'
-import { setTimeout } from 'timers/promises'
 
 const list = ["https://www.youtube.com/playlist?list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD", 
     "https://www.youtube.com/playlist?list=PL699Xf-_ilW6KgK-S1l9ynOnBGiZl2Bsk", 
