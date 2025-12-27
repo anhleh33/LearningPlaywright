@@ -7,7 +7,9 @@
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
-    "grep": {},
+    "grep": [
+      {}
+    ],
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
@@ -56,22 +58,24 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "baseURL2.test.ts",
-      "file": "baseURL2.test.ts",
+      "title": "tag.test.ts",
+      "file": "tag.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Goto button page",
+          "title": "Test login page @reg",
           "ok": true,
-          "tags": [],
+          "tags": [
+            "reg"
+          ],
           "tests": [
             {
               "timeout": 30000,
@@ -84,22 +88,32 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3485,
+                  "duration": 3,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "some login test @reg...\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-27T08:35:32.964Z",
+                  "startTime": "2025-12-27T08:50:47.682Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\tag-Test-login-page-reg-chromium\\trace.zip"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "bdc982e3f112d8fff175-9eff3e3909d1c5c720c3",
-          "file": "baseURL2.test.ts",
-          "line": 7,
+          "id": "83d375bc63e3b356c76c-ad59ac8eb1fc7d001bc6",
+          "file": "tag.test.ts",
+          "line": 11,
           "column": 5
         }
       ]
@@ -107,8 +121,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-27T08:35:30.912Z",
-    "duration": 5916.213999999978,
+    "startTime": "2025-12-27T08:50:46.697Z",
+    "duration": 1036.3809999999999,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
