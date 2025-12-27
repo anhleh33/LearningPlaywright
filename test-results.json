@@ -44,7 +44,7 @@
         "testDir": "C:/Users/Admin/OneDrive/Desktop/TestingDemo/Playwright/tests",
         "testIgnore": [],
         "testMatch": [
-          "myTest.test.ts"
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
       }
@@ -59,13 +59,13 @@
   },
   "suites": [
     {
-      "title": "fixtures\\myTest.test.ts",
-      "file": "fixtures/myTest.test.ts",
+      "title": "basicVerification.test.ts",
+      "file": "basicVerification.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Test sử dụng fixture tùy chỉnh",
+          "title": "Basic UI Verification - Radio",
           "ok": true,
           "tags": [],
           "tests": [
@@ -77,22 +77,15 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 27,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 485,
+                  "duration": 2831,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "I am letcode\n"
-                    },
-                    {
-                      "text": "Is it passed? passed\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-26T08:18:02.430Z",
+                  "startTime": "2025-12-27T07:37:31.250Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -100,9 +93,9 @@
               "status": "expected"
             }
           ],
-          "id": "fee6dfde436b4039c4f8-22ca89f1e4d57a8d9363",
-          "file": "fixtures/myTest.test.ts",
-          "line": 3,
+          "id": "9fb0b560670c0063f810-e87f4a89aaa741fdceb8",
+          "file": "basicVerification.test.ts",
+          "line": 31,
           "column": 5
         }
       ]
@@ -110,8 +103,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-26T08:18:00.734Z",
-    "duration": 2784.886000000057,
+    "startTime": "2025-12-27T07:37:29.297Z",
+    "duration": 5043.109000000171,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
