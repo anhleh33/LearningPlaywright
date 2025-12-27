@@ -21,3 +21,21 @@ Retries running test case if it is failed
 ```
 npx playwright test --retries=3
 ```
+
+# Install Allure Report 
+Install Allure 
+```
+npm install --save-dev @playwright/test allure-playwright
+```
+Check Allure version
+```
+allure --version
+```
+View Allure report (must already have tests before)
+```
+allure serve allure-results
+```
+Install Allure commandline
+```
+npm install -g allure-commandline --save-dev
+```

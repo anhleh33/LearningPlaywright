@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx playwright test",
     "test-us": "npx playwright test --update-snapshots",
-    "report" : "npx playwright show-report"
+    "report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,8 @@
     "@playwright/test": "^1.57.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^24.10.1",
+    "allure-commandline": "^2.36.0",
+    "allure-playwright": "^3.4.3",
     "jest": "^30.2.0",
     "ts-jest": "^29.4.6"
   },

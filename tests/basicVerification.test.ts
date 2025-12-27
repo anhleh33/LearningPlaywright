@@ -2,8 +2,6 @@ import {test, expect} from '@playwright/test'
 
 test("Basic UI Verification - Edit", async({page}) => {
     await page.goto('https://letcode.in/edit')
-    // await page.goto('https://letcode.in/buttons')
-    // await page.goto('https://letcode.in/radio')
 
     //isDisable()
     await expect(await page.isDisabled('#noEdit')).toBeTruthy()

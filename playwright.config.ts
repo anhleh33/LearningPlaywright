@@ -27,9 +27,10 @@ export default defineConfig({
     ['html'], // HTML Reporter
     ['json', { outputFile: 'test-results.json' }], // JSON Reporter
     // ['junit', { outputFile: 'results.xml' }] // JUnit Reporter
+    ['allure-playwright']
   ],
 
-  // testMatch: ["myTest.test.ts"],
+  // testMatch: ["basicVerification.test.ts"],
   // reporter: [["dot"], ["json", { outputFile: "test-result.json" }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {

@@ -24,6 +24,10 @@
         {
           "outputFile": "test-results.json"
         }
+      ],
+      [
+        "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -59,14 +63,14 @@
   },
   "suites": [
     {
-      "title": "basicVerification.test.ts",
-      "file": "basicVerification.test.ts",
+      "title": "fixtures\\mytest2.test.ts",
+      "file": "fixtures/mytest2.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Basic UI Verification - Radio",
-          "ok": true,
+          "title": "test 1",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -77,25 +81,52 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 27,
+                  "workerIndex": 2,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2831,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 30201,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\page\\Header.page.ts",
+                        "column": 15,
+                        "line": 24
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text= Log in')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\page\\Header.page.ts:24\n\n\u001b[0m \u001b[90m 22 |\u001b[39m         \u001b[36melse\u001b[39m\n \u001b[90m 23 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"No element\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m     }\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mpublic\u001b[39m \u001b[36masync\u001b[39m clickLoginLink() {\n \u001b[90m 27 |\u001b[39m         \u001b[36mconst\u001b[39m ele \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39meleLoginBtn\u001b[0m\n\u001b[2m    at HeaderPage.clickLoginLink (C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\page\\Header.page.ts:24:15)\u001b[22m\n\u001b[2m    at C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\fixtures\\mytest2.test.ts:9:5\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-27T07:37:31.250Z",
+                  "startTime": "2025-12-27T08:10:38.747Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\fixtures-mytest2-test-1-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\fixtures-mytest2-test-1-chromium\\error-context.md"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "9fb0b560670c0063f810-e87f4a89aaa741fdceb8",
-          "file": "basicVerification.test.ts",
-          "line": 31,
+          "id": "2204ae3a3165fba09d78-1943b012ccca8254f7ad",
+          "file": "fixtures/mytest2.test.ts",
+          "line": 8,
           "column": 5
         }
       ]
@@ -103,11 +134,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-27T07:37:29.297Z",
-    "duration": 5043.109000000171,
-    "expected": 1,
+    "startTime": "2025-12-27T08:10:36.908Z",
+    "duration": 32124.104999999996,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
