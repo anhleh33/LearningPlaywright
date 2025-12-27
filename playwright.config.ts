@@ -49,7 +49,7 @@ export default defineConfig({
     // },
     // baseURL: 'https://letcode.in'
   },
-  grep: [new RegExp("@reg")],
+  // grep: [new RegExp("@reg")],
 
   /* Configure projects for major browsers */
   projects: [
