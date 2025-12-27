@@ -46,7 +46,8 @@ export default defineConfig({
     video: "retain-on-failure",
     // launchOptions: {
     //   slowMo: 5000
-    // }
+    // },
+    // baseURL: 'https://letcode.in'
   },
 
   /* Configure projects for major browsers */
