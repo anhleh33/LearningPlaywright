@@ -29,7 +29,7 @@ export default defineConfig({
     // ['junit', { outputFile: 'results.xml' }] // JUnit Reporter
     ['allure-playwright']
   ],
-
+  // timeout: 20000,
   // testMatch: ["basicVerification.test.ts"],
   // reporter: [["dot"], ["json", { outputFile: "test-result.json" }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
