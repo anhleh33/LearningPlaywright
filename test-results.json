@@ -74,26 +74,17 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 90000,
-              "annotations": [
-                {
-                  "type": "slow",
-                  "location": {
-                    "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\mobile.test.ts",
-                    "line": 16,
-                    "column": 10
-                  }
-                }
-              ],
+              "timeout": 30000,
+              "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 25,
+                  "workerIndex": 26,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 19049,
+                  "duration": 9880,
                   "errors": [],
                   "stdout": [
                     {
@@ -101,27 +92,12 @@
                     },
                     {
                       "text": "Serial: emulator-5554\n"
-                    },
-                    {
-                      "text": "second test running\n"
-                    },
-                    {
-                      "text": "second test completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-28T04:35:12.073Z",
-                  "annotations": [
-                    {
-                      "type": "slow",
-                      "location": {
-                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\mobile.test.ts",
-                        "line": 16,
-                        "column": 10
-                      }
-                    }
-                  ],
+                  "startTime": "2025-12-28T04:36:32.110Z",
+                  "annotations": [],
                   "attachments": [
                     {
                       "name": "trace",
@@ -144,8 +120,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-28T04:35:10.028Z",
-    "duration": 21143.90499999933,
+    "startTime": "2025-12-28T04:36:30.024Z",
+    "duration": 12039.596999999136,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

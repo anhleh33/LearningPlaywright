@@ -13,10 +13,7 @@ test("Run in Android - Chrome", async () => {
 
     // Use BrowserContext as usual.
     const page = await context.newPage();
-    test.slow()
-    console.log("second test running")
     await page.goto("https://playwright.dev/")
-    console.log("second test completed")
 
     await device.screenshot({ path: 'device.png' });
 })
