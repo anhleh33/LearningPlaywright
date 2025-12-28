@@ -63,142 +63,94 @@
   },
   "suites": [
     {
-      "title": "serial.test.ts",
-      "file": "serial.test.ts",
+      "title": "innerHTMLinnerTextinnerContext.test.ts",
+      "file": "innerHTMLinnerTextinnerContext.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Dependent Tests Group",
-          "file": "serial.test.ts",
-          "line": 4,
-          "column": 15,
-          "specs": [
+          "title": "innerHTML vs innerText vs textContent",
+          "ok": false,
+          "tags": [],
+          "tests": [
             {
-              "title": "Test 1: Login (Fails)",
-              "ok": false,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "workerIndex": 20,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2652,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5500/index.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5500/index.html\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5500/index.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5500/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\innerHTMLinnerTextinnerContext.test.ts:5:16",
+                    "location": {
+                      "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\innerHTMLinnerTextinnerContext.test.ts",
+                      "column": 16,
+                      "line": 5
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m test(\u001b[32m\"innerHTML vs innerText vs textContent\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m     \u001b[90m// Navigate to the page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"http://localhost:5500/index.html\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[90m// Define the locator for the paragraph\u001b[39m\n \u001b[90m 8 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#attach\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
                     {
-                      "workerIndex": 19,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 1956,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Welcome\u001b[7m 1\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"Welcome\"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Welcome\u001b[7m 1\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"Welcome\"\u001b[39m\n    at C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\serial.test.ts:11:27",
-                        "location": {
-                          "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\serial.test.ts",
-                          "column": 27,
-                          "line": 11
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m         \u001b[90m// This assertion will fail (expecting 'Welcome 1' but getting 'Welcome')\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[90m// Because this fails, the next test will be SKIPPED.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m         expect(\u001b[32m\"Welcome\"\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Welcome 1\"\u001b[39m)\u001b[33m;\u001b[39m \n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m     test(\u001b[32m\"Test 2: Search Product\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      "location": {
+                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\innerHTMLinnerTextinnerContext.test.ts",
+                        "column": 16,
+                        "line": 5
                       },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\serial.test.ts",
-                            "column": 27,
-                            "line": 11
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Welcome\u001b[7m 1\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"Welcome\"\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m         \u001b[90m// This assertion will fail (expecting 'Welcome 1' but getting 'Welcome')\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[90m// Because this fails, the next test will be SKIPPED.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m         expect(\u001b[32m\"Welcome\"\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Welcome 1\"\u001b[39m)\u001b[33m;\u001b[39m \n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m     test(\u001b[32m\"Test 2: Search Product\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\serial.test.ts:11:27\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-28T03:27:22.586Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\serial-Dependent-Tests-Group-Test-1-Login-Fails--chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\serial-Dependent-Tests-Group-Test-1-Login-Fails--chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\serial-Dependent-Tests-Group-Test-1-Login-Fails--chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\serial-Dependent-Tests-Group-Test-1-Login-Fails--chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\serial.test.ts",
-                        "column": 27,
-                        "line": 11
-                      }
+                      "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5500/index.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5500/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test(\u001b[32m\"innerHTML vs innerText vs textContent\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m     \u001b[90m// Navigate to the page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"http://localhost:5500/index.html\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[90m// Define the locator for the paragraph\u001b[39m\n \u001b[90m 8 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#attach\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\innerHTMLinnerTextinnerContext.test.ts:5:16\u001b[22m"
                     }
                   ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "5309c9635f1dd3e206a2-4368e9dfd8ec85ddde47",
-              "file": "serial.test.ts",
-              "line": 6,
-              "column": 9
-            },
-            {
-              "title": "Test 2: Search Product",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-28T03:43:19.890Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-28T03:27:24.831Z",
-                      "annotations": [],
-                      "attachments": []
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\innerHTMLinnerTextinnerCon-92d78-vs-innerText-vs-textContent-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\innerHTMLinnerTextinnerCon-92d78-vs-innerText-vs-textContent-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\innerHTMLinnerTextinnerCon-92d78-vs-innerText-vs-textContent-chromium\\trace.zip"
                     }
                   ],
-                  "status": "skipped"
+                  "errorLocation": {
+                    "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\innerHTMLinnerTextinnerContext.test.ts",
+                    "column": 16,
+                    "line": 5
+                  }
                 }
               ],
-              "id": "5309c9635f1dd3e206a2-5f4b2fe7ad283501746a",
-              "file": "serial.test.ts",
-              "line": 14,
-              "column": 9
+              "status": "unexpected"
             }
-          ]
+          ],
+          "id": "29f3a88076d365134ad6-b08ebd4fc4cb856f1470",
+          "file": "innerHTMLinnerTextinnerContext.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-28T03:27:20.971Z",
-    "duration": 3885.2490000007674,
+    "startTime": "2025-12-28T03:43:18.239Z",
+    "duration": 4480.443999999203,
     "expected": 0,
-    "skipped": 1,
+    "skipped": 0,
     "unexpected": 1,
     "flaky": 0
   }
