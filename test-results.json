@@ -58,18 +58,18 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "3way",
     "version": "1.57.0",
-    "workers": 6,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "mobile.test.ts",
-      "file": "mobile.test.ts",
+      "title": "amazonprice.test.ts",
+      "file": "amazonprice.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Run in Android - Chrome",
+          "title": "Amazon price drop notification",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,38 +81,35 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 26,
+                  "workerIndex": 59,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9880,
+                  "duration": 6171,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Model: sdk_gphone64_x86_64\n"
+                      "text": "53925729VND\n"
                     },
                     {
-                      "text": "Serial: emulator-5554\n"
+                      "text": "Preparing to send professional email report...\n"
+                    },
+                    {
+                      "text": "✅ Email sent successfully: 250 2.0.0 OK  1766912717 41be03b00d2f7-c1e7c14747csm22599203a12.27 - gsmtp\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-28T04:36:32.110Z",
+                  "startTime": "2025-12-28T09:05:12.060Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\mobile-Run-in-Android---Chrome-chromium\\trace.zip"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "b918482cffc7046160dc-c873d96ee72aeb1e4ffc",
-          "file": "mobile.test.ts",
-          "line": 4,
+          "id": "4ed4063374f4d1f6ca6c-1b0ef2580b74c23bb263",
+          "file": "amazonprice.test.ts",
+          "line": 7,
           "column": 5
         }
       ]
@@ -120,8 +117,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-28T04:36:30.024Z",
-    "duration": 12039.596999999136,
+    "startTime": "2025-12-28T09:05:10.211Z",
+    "duration": 8097.146999999881,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
