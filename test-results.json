@@ -58,292 +58,68 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "3way",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "annotation.test.ts",
-      "file": "annotation.test.ts",
+      "title": "apiresponse.test.ts",
+      "file": "apiresponse.test.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Test Annotation",
-          "file": "annotation.test.ts",
+          "title": "API Response test",
+          "file": "apiresponse.test.ts",
           "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "first test",
+              "title": "Read API Response",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 90000,
-                  "annotations": [
-                    {
-                      "type": "slow",
-                      "location": {
-                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                        "line": 4,
-                        "column": 10
-                      }
-                    }
-                  ],
+                  "timeout": 30000,
+                  "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3280,
+                      "duration": 2559,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "first test running\n"
+                          "text": "Captured URL: https://api.github.com/users/anhleh33\n"
                         },
                         {
-                          "text": "first test completed\n"
+                          "text": "{\n  login: \u001b[32m'anhleh33'\u001b[39m,\n  id: \u001b[33m166407355\u001b[39m,\n  node_id: \u001b[32m'U_kgDOCessuw'\u001b[39m,\n  avatar_url: \u001b[32m'https://avatars.githubusercontent.com/u/166407355?v=4'\u001b[39m,\n  gravatar_id: \u001b[32m''\u001b[39m,\n  url: \u001b[32m'https://api.github.com/users/anhleh33'\u001b[39m,\n  html_url: \u001b[32m'https://github.com/anhleh33'\u001b[39m,\n  followers_url: \u001b[32m'https://api.github.com/users/anhleh33/followers'\u001b[39m,\n  following_url: \u001b[32m'https://api.github.com/users/anhleh33/following{/other_user}'\u001b[39m,\n  gists_url: \u001b[32m'https://api.github.com/users/anhleh33/gists{/gist_id}'\u001b[39m,\n  starred_url: \u001b[32m'https://api.github.com/users/anhleh33/starred{/owner}{/repo}'\u001b[39m,\n  subscriptions_url: \u001b[32m'https://api.github.com/users/anhleh33/subscriptions'\u001b[39m,\n  organizations_url: \u001b[32m'https://api.github.com/users/anhleh33/orgs'\u001b[39m,\n  repos_url: \u001b[32m'https://api.github.com/users/anhleh33/repos'\u001b[39m,\n  events_url: \u001b[32m'https://api.github.com/users/anhleh33/events{/privacy}'\u001b[39m,\n  received_events_url: \u001b[32m'https://api.github.com/users/anhleh33/received_events'\u001b[39m,\n  type: \u001b[32m'User'\u001b[39m,\n  user_view_type: \u001b[32m'public'\u001b[39m,\n  site_admin: \u001b[33mfalse\u001b[39m,\n  name: \u001b[32m'Anh Hoang '\u001b[39m,\n  company: \u001b[1mnull\u001b[22m,\n  blog: \u001b[32m''\u001b[39m,\n  location: \u001b[1mnull\u001b[22m,\n  email: \u001b[1mnull\u001b[22m,\n  hireable: \u001b[33mtrue\u001b[39m,\n  bio: \u001b[32m\"Opportunities don't happen, you create them.\"\u001b[39m,\n  twitter_username: \u001b[1mnull\u001b[22m,\n  public_repos: \u001b[33m16\u001b[39m,\n  public_gists: \u001b[33m0\u001b[39m,\n  followers: \u001b[33m0\u001b[39m,\n  following: \u001b[33m0\u001b[39m,\n  created_at: \u001b[32m'2024-04-08T13:42:18Z'\u001b[39m,\n  updated_at: \u001b[32m'2025-11-25T03:17:38Z'\u001b[39m\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-28T02:11:52.949Z",
-                      "annotations": [
-                        {
-                          "type": "slow",
-                          "location": {
-                            "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                            "line": 4,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "dbd30a86734db7f79827-2d00e51b398ba8fc91f8",
-              "file": "annotation.test.ts",
-              "line": 5,
-              "column": 9
-            },
-            {
-              "title": "second test",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 90000,
-                  "annotations": [
-                    {
-                      "type": "slow",
-                      "location": {
-                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                        "line": 4,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 974,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "second test running\n"
-                        },
-                        {
-                          "text": "second test completed\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-28T02:11:56.278Z",
-                      "annotations": [
-                        {
-                          "type": "slow",
-                          "location": {
-                            "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                            "line": 4,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "dbd30a86734db7f79827-619cb684c425e571a4ba",
-              "file": "annotation.test.ts",
-              "line": 11,
-              "column": 9
-            },
-            {
-              "title": "second test only",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 90000,
-                  "annotations": [
-                    {
-                      "type": "slow",
-                      "location": {
-                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                        "line": 4,
-                        "column": 10
-                      }
-                    },
-                    {
-                      "type": "fail",
-                      "location": {
-                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                        "line": 18,
-                        "column": 14
-                      }
-                    }
-                  ],
-                  "expectedStatus": "failed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 602,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "second test running\n"
-                        },
-                        {
-                          "text": "second test completed\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-28T02:11:57.265Z",
-                      "annotations": [
-                        {
-                          "type": "slow",
-                          "location": {
-                            "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                            "line": 4,
-                            "column": 10
-                          }
-                        },
-                        {
-                          "type": "fail",
-                          "location": {
-                            "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                            "line": 18,
-                            "column": 14
-                          }
-                        }
-                      ],
+                      "startTime": "2025-12-28T02:47:04.363Z",
+                      "annotations": [],
                       "attachments": [
                         {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\annotation-Test-Annotation-second-test-only-chromium\\test-failed-1.png"
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\apiresponse-API-Response-test-Read-API-Response-chromium\\trace.zip"
                         }
                       ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "dbd30a86734db7f79827-eddd8761c2aa4546ce4f",
-              "file": "annotation.test.ts",
-              "line": 17,
-              "column": 9
-            },
-            {
-              "title": "third test",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 90000,
-                  "annotations": [
-                    {
-                      "type": "slow",
-                      "location": {
-                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                        "line": 4,
-                        "column": 10
-                      }
-                    },
-                    {
-                      "type": "fixme",
-                      "location": {
-                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                        "line": 28,
-                        "column": 18
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
-                      "status": "skipped",
-                      "duration": 153,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Name: chromium\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-28T02:11:58.738Z",
-                      "annotations": [
-                        {
-                          "type": "slow",
-                          "location": {
-                            "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                            "line": 4,
-                            "column": 10
-                          }
-                        },
-                        {
-                          "type": "fixme",
-                          "location": {
-                            "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\annotation.test.ts",
-                            "line": 28,
-                            "column": 18
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "dbd30a86734db7f79827-21a4e7ca7691a2799440",
-              "file": "annotation.test.ts",
-              "line": 25,
+              "id": "cfa05b088dd1962b8241-3dd1488413dae6f154bf",
+              "file": "apiresponse.test.ts",
+              "line": 4,
               "column": 9
             }
           ]
@@ -353,11 +129,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-28T02:11:51.339Z",
-    "duration": 7616.478000000003,
-    "expected": 2,
-    "skipped": 1,
-    "unexpected": 1,
+    "startTime": "2025-12-28T02:47:02.616Z",
+    "duration": 4554.912000000011,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
     "flaky": 0
   }
 }
