@@ -18,3 +18,10 @@ test.describe.serial("Dependent Tests Group", () => {
     });
 
 });
+
+// Summary of Best Practices
+// Old: page.$ (Element Handle) → finds element once, stays fixed.
+
+// New: page.locator → re-finds element on every action, strict by default.
+
+// Helpers: Use .first(), .last(), or .nth(i) to pick specific elements from a list.
