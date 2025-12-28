@@ -63,83 +63,80 @@
   },
   "suites": [
     {
-      "title": "innerHTMLinnerTextinnerContext.test.ts",
-      "file": "innerHTMLinnerTextinnerContext.test.ts",
+      "title": "mobile.test.ts",
+      "file": "mobile.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "innerHTML vs innerText vs textContent",
-          "ok": false,
+          "title": "Run in Android - Chrome",
+          "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
-              "annotations": [],
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\mobile.test.ts",
+                    "line": 16,
+                    "column": 10
+                  }
+                }
+              ],
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 20,
+                  "workerIndex": 25,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 2652,
-                  "error": {
-                    "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5500/index.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5500/index.html\", waiting until \"load\"\u001b[22m\n",
-                    "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5500/index.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5500/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\innerHTMLinnerTextinnerContext.test.ts:5:16",
-                    "location": {
-                      "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\innerHTMLinnerTextinnerContext.test.ts",
-                      "column": 16,
-                      "line": 5
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m test(\u001b[32m\"innerHTML vs innerText vs textContent\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m     \u001b[90m// Navigate to the page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"http://localhost:5500/index.html\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[90m// Define the locator for the paragraph\u001b[39m\n \u001b[90m 8 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#attach\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 19049,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "location": {
-                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\innerHTMLinnerTextinnerContext.test.ts",
-                        "column": 16,
-                        "line": 5
-                      },
-                      "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5500/index.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5500/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test(\u001b[32m\"innerHTML vs innerText vs textContent\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m     \u001b[90m// Navigate to the page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"http://localhost:5500/index.html\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[90m// Define the locator for the paragraph\u001b[39m\n \u001b[90m 8 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#attach\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\innerHTMLinnerTextinnerContext.test.ts:5:16\u001b[22m"
+                      "text": "Model: sdk_gphone64_x86_64\n"
+                    },
+                    {
+                      "text": "Serial: emulator-5554\n"
+                    },
+                    {
+                      "text": "second test running\n"
+                    },
+                    {
+                      "text": "second test completed\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-28T03:43:19.890Z",
-                  "annotations": [],
+                  "startTime": "2025-12-28T04:35:12.073Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\mobile.test.ts",
+                        "line": 16,
+                        "column": 10
+                      }
+                    }
+                  ],
                   "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\innerHTMLinnerTextinnerCon-92d78-vs-innerText-vs-textContent-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\innerHTMLinnerTextinnerCon-92d78-vs-innerText-vs-textContent-chromium\\video.webm"
-                    },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\innerHTMLinnerTextinnerCon-92d78-vs-innerText-vs-textContent-chromium\\trace.zip"
+                      "path": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\test-results\\mobile-Run-in-Android---Chrome-chromium\\trace.zip"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\tests\\innerHTMLinnerTextinnerContext.test.ts",
-                    "column": 16,
-                    "line": 5
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "29f3a88076d365134ad6-b08ebd4fc4cb856f1470",
-          "file": "innerHTMLinnerTextinnerContext.test.ts",
-          "line": 3,
+          "id": "b918482cffc7046160dc-c873d96ee72aeb1e4ffc",
+          "file": "mobile.test.ts",
+          "line": 4,
           "column": 5
         }
       ]
@@ -147,11 +144,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-28T03:43:18.239Z",
-    "duration": 4480.443999999203,
-    "expected": 0,
+    "startTime": "2025-12-28T04:35:10.028Z",
+    "duration": 21143.90499999933,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
