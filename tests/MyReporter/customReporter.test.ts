@@ -9,6 +9,5 @@ test("Custom Reporter Demo", async ({ page }) => {
     });
     await test.step("3. Append text and verify", async () => {
         const input = page.locator("#join");
-        await expect(input).toHaveValue(" I am good"); // This might fail if text is pre-filled, mostly for demo
-    });
+        await expect(input).toHaveValue(" I am good");
 });
