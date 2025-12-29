@@ -5,6 +5,6 @@ describe("Launch Browser Test", () => {
     test('Open Leetcode', async ({page}) => {
 
         await page.goto('https://leetcode.com/');
-        await page.screenshot({ path: 'leetcode_homepage.png' });
+        await page.screenshot({ path: './img/leetcode_homepage.png' });
     });
 });

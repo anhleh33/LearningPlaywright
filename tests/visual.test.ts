@@ -25,7 +25,7 @@ test.describe('Visual Comparison', () => {
 
         await expect(await page.screenshot({
             fullPage: true
-        })).toMatchSnapshot("./leetcode_homepage.png")
+        })).toMatchSnapshot("./img/leetcode_homepage.png")
     })
     
 })

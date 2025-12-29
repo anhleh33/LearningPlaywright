@@ -15,5 +15,5 @@ test("Run in Android - Chrome", async () => {
     const page = await context.newPage();
     await page.goto("https://playwright.dev/")
 
-    await device.screenshot({ path: 'device.png' });
+    await device.screenshot({ path: './img/device.png' });
 })

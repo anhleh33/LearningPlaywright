@@ -58,18 +58,18 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "3way",
     "version": "1.57.0",
-    "workers": 3,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "locatordetail.test.ts",
-      "file": "locatordetail.test.ts",
+      "title": "waitforAlert.test.ts",
+      "file": "waitforAlert.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Locator API vs Element Handle (Working Version)",
+          "title": "Screenshots Demo",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,41 +81,25 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 11,
+                  "workerIndex": 20,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 15398,
+                  "duration": 9289,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Default Price: $29.99\n"
-                    },
-                    {
-                      "text": "Low to High Price: $7.99\n"
-                    },
-                    {
-                      "text": "High to Low Price: $49.99\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-29T03:48:31.906Z",
+                  "startTime": "2025-12-29T04:15:24.407Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\test-results\\locatordetail-Locator-API-vs-Element-Handle-Working-Version--chromium\\trace.zip"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "ba9452c58e92cb61b7cb-0a7df187c99189c4cf31",
-          "file": "locatordetail.test.ts",
-          "line": 3,
+          "id": "d197faaaba5558888820-27e21b97370f8a7f79ae",
+          "file": "waitforAlert.test.ts",
+          "line": 15,
           "column": 5
         }
       ]
@@ -123,8 +107,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-29T03:48:21.645Z",
-    "duration": 34420.09400000004,
+    "startTime": "2025-12-29T04:15:16.729Z",
+    "duration": 17212.82299999986,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
