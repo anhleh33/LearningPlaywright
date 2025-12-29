@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/Admin/OneDrive/Desktop/TestingDemo/Playwright/tests",
+    "configFile": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\playwright.config.ts",
+    "rootDir": "C:/Users/intern.lhanh1/Desktop/LearningPlaywright/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -26,7 +26,7 @@
         }
       ],
       [
-        "C:\\Users\\Admin\\OneDrive\\Desktop\\TestingDemo\\Playwright\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
         null
       ]
     ],
@@ -37,7 +37,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/Admin/OneDrive/Desktop/TestingDemo/Playwright/test-results",
+        "outputDir": "C:/Users/intern.lhanh1/Desktop/LearningPlaywright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -45,7 +45,7 @@
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/Admin/OneDrive/Desktop/TestingDemo/Playwright/tests",
+        "testDir": "C:/Users/intern.lhanh1/Desktop/LearningPlaywright/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -63,13 +63,13 @@
   },
   "suites": [
     {
-      "title": "amazonprice.test.ts",
-      "file": "amazonprice.test.ts",
+      "title": "logger\\playlogger.test.ts",
+      "file": "logger/playlogger.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Amazon price drop notification",
+          "title": "Read Browser Console Logs",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,25 +81,22 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 59,
+                  "workerIndex": 7,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6171,
+                  "duration": 10100,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "53925729VND\n"
+                      "text": "Found Error: \"Failed to load resource: the server responded with a status of 404 ()\"\n"
                     },
                     {
-                      "text": "Preparing to send professional email report...\n"
-                    },
-                    {
-                      "text": "✅ Email sent successfully: 250 2.0.0 OK  1766912717 41be03b00d2f7-c1e7c14747csm22599203a12.27 - gsmtp\n"
+                      "text": "Found Error: \"Failed to load resource: the server responded with a status of 404 ()\"\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-28T09:05:12.060Z",
+                  "startTime": "2025-12-29T03:38:18.238Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -107,9 +104,9 @@
               "status": "expected"
             }
           ],
-          "id": "4ed4063374f4d1f6ca6c-1b0ef2580b74c23bb263",
-          "file": "amazonprice.test.ts",
-          "line": 7,
+          "id": "47c7b9d6554928a88f8a-2f5884d12aebea2b12dc",
+          "file": "logger/playlogger.test.ts",
+          "line": 28,
           "column": 5
         }
       ]
@@ -117,8 +114,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-28T09:05:10.211Z",
-    "duration": 8097.146999999881,
+    "startTime": "2025-12-29T03:38:06.585Z",
+    "duration": 27403.201,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
