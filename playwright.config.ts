@@ -25,8 +25,9 @@ export default defineConfig({
   // reporter: 'html',
   reporter: [
     ['html'], // HTML Reporter
-    ['json', { outputFile: 'test-results.json' }], // JSON Reporter
+    // ['json', { outputFile: 'test-results.json' }], // JSON Reporter
     // ['junit', { outputFile: 'results.xml' }] // JUnit Reporter
+    ['./tests/MyReporter/myReporter.ts'],
     ['allure-playwright']
   ],
   // timeout: 20000,
