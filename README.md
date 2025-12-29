@@ -45,3 +45,8 @@ Install Winston
 ```
 npm install --save-dev winston
 ```
+
+# How to view trace.zip
+```
+npx playwright show-trace trace.zip
+```

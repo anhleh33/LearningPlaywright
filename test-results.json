@@ -58,18 +58,18 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "3way",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 3,
     "webServer": null
   },
   "suites": [
     {
-      "title": "logger\\playlogger.test.ts",
-      "file": "logger/playlogger.test.ts",
+      "title": "locatordetail.test.ts",
+      "file": "locatordetail.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Read Browser Console Logs",
+          "title": "Locator API vs Element Handle (Working Version)",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,32 +81,41 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 7,
+                  "workerIndex": 11,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 10100,
+                  "duration": 15398,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Found Error: \"Failed to load resource: the server responded with a status of 404 ()\"\n"
+                      "text": "Default Price: $29.99\n"
                     },
                     {
-                      "text": "Found Error: \"Failed to load resource: the server responded with a status of 404 ()\"\n"
+                      "text": "Low to High Price: $7.99\n"
+                    },
+                    {
+                      "text": "High to Low Price: $49.99\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-29T03:38:18.238Z",
+                  "startTime": "2025-12-29T03:48:31.906Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\intern.lhanh1\\Desktop\\LearningPlaywright\\test-results\\locatordetail-Locator-API-vs-Element-Handle-Working-Version--chromium\\trace.zip"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "47c7b9d6554928a88f8a-2f5884d12aebea2b12dc",
-          "file": "logger/playlogger.test.ts",
-          "line": 28,
+          "id": "ba9452c58e92cb61b7cb-0a7df187c99189c4cf31",
+          "file": "locatordetail.test.ts",
+          "line": 3,
           "column": 5
         }
       ]
@@ -114,8 +123,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-29T03:38:06.585Z",
-    "duration": 27403.201,
+    "startTime": "2025-12-29T03:48:21.645Z",
+    "duration": 34420.09400000004,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
