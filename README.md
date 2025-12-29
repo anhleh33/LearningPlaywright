@@ -39,3 +39,9 @@ Install Allure commandline
 ```
 npm install -g allure-commandline --save-dev
 ```
+
+# Install Winston
+Install Winston 
+```
+npm install --save-dev winston
+```
