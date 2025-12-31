@@ -20,14 +20,15 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  // workers: process.env.CI ? 1 : undefined,
+  workers: 4, // Số parallel workers
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
   reporter: [
     ['html'], // HTML Reporter
     // ['json', { outputFile: 'test-results.json' }], // JSON Reporter
     // ['junit', { outputFile: 'results.xml' }] // JUnit Reporter
-    ['./tests/MyReporter/myReporter.ts'],
+    // ['./tests/MyReporter/myReporter.ts'],
     ['allure-playwright']
   ],
   // timeout: 20000,

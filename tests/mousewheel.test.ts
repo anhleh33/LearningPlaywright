@@ -5,7 +5,7 @@ test("Mouse Wheel & Bounding Box Demo", async ({ page }) => {
     await page.goto("https://letcode.in/advancedtable");
 
     // 2. Locate an element (e.g., a specific row in a table)
-    const targetRow = page.locator("tr").nth(5); // Get the 5th row
+    const targetRow = page.locator("tr").nth(5);
 
     // 3. Get the Bounding Box (x, y, width, height)
     const box = await targetRow.boundingBox();
@@ -14,7 +14,6 @@ test("Mouse Wheel & Bounding Box Demo", async ({ page }) => {
         console.log("Found element at:", box);
 
         // 4. Use the Mouse API to scroll (Vertical scroll)
-        // Scroll down 200 pixels
         await page.mouse.wheel(0, 200);
         
         // 5. Move the mouse cursor to the center of that element

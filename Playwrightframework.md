@@ -5,7 +5,6 @@
 Unlike most videos in the series which focus on single concepts, this episode is a special deep-dive feature \*\*presented by guest speaker Akshay Pramod Pai\*\*. It consolidates many advanced topics into a single session, making it an excellent resource for intermediate users looking to structure their own test automation projects.
 
 
-
 #### Key Highlights of the Video:
 
 1. **Framework Architecture**: The video moves beyond basic scripting to demonstrate a proper Page Object Model (POM) architecture. Akshay explains how to structure your project with a `BasePage` class to handle common actions, ensuring your code is reusable and maintainable.

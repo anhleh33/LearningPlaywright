@@ -1,6 +1,6 @@
 Youtube video link: https://www.youtube.com/playlist?list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD
 
-# Install Jest (Javascript framework)
+# Install Jest
 Instal Jest
 ```
 npm install --save-dev jest
@@ -37,10 +37,10 @@ allure serve allure-results
 ```
 Install Allure commandline
 ```
-npm install -g allure-commandline --save-dev
+npm install allure-commandline --save-dev
 ```
 
-# Install Winston
+# Install Winston Logger
 Install Winston 
 ```
 npm install --save-dev winston
@@ -49,4 +49,18 @@ npm install --save-dev winston
 # How to view trace.zip
 ```
 npx playwright show-trace trace.zip
+```
+
+# Install Parallel
+```
+npm install parallel --save-dev
+```
+Note: the script can not run in case using "Show browser" and worker in playwright config must be above 1 (based on all TCs that is being run)
+```
+npm test tests/parallel.test.ts
+```
+
+# Install Clipboardy
+```
+npm install clipboardy --save-dev
 ```
