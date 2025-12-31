@@ -19,6 +19,7 @@
     "@types/nodemailer": "^7.0.4",
     "allure-commandline": "^2.36.0",
     "allure-playwright": "^3.4.3",
+    "clipboardy": "^2.3.0",
     "jest": "^30.2.0",
     "ts-jest": "^29.4.6",
     "winston": "^3.19.0"

@@ -1,6 +1,15 @@
 import { Reporter, FullConfig, Suite, TestCase, TestResult, TestStep, FullResult } from '@playwright/test/reporter';
 
 export default class MyReporter implements Reporter {
+    onStdOut(chunk: string | Buffer, test: void | TestCase, result: void | TestResult) {
+        const text = chunk.toString();
+        // If the log has multiple lines, add the icon to each line for cleaner reading
+        if (text.includes('\n')) {
+             console.log(text.split('\n').map(line => `    📝 ${line}`).join('\n'));
+        } else {
+             console.log(`    📝 Output: ${text.trim()}`);
+        }
+    }
 
     // 1. Triggered once when the test run starts
     onBegin(config: FullConfig, suite: Suite) {
