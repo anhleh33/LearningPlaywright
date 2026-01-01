@@ -64,6 +64,7 @@ npm test tests/parallel.test.ts
 ```
 npm install clipboardy --save-dev
 ```
+
 # Install ADM-Zip
 ```
 npm install adm-zip --save-dev
@@ -82,3 +83,4 @@ npm install tesseract.js --save-dev
 npm install dotenv --save-dev
 npm install cross-env --save-dev
 ```
+

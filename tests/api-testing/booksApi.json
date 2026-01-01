@@ -1,0 +1,36 @@
+{
+  "books": [ 
+    {
+      "bookId": 1,
+      "title": "Playwright for Beginners",
+      "author": "Koushik Chatterjee",
+      "category": "Automation",
+      "price": "25.00",
+      "cover": "https://letcode.in/assets/images/playwright.png"
+    },
+    {
+      "bookId": 2,
+      "title": "The Art of Testing",
+      "author": "Jane Doe",
+      "category": "Testing",
+      "price": "19.99",
+      "cover": "https://letcode.in/assets/images/testing.png"
+    },
+    {
+      "bookId": 3,
+      "title": "TypeScript Essentials",
+      "author": "John Smith",
+      "category": "Programming",
+      "price": "30.50",
+      "cover": "https://letcode.in/assets/images/ts.png"
+    },
+    {
+      "bookId": 4,
+      "title": "Advanced API Mocking",
+      "author": "Automation Hero",
+      "category": "Advanced",
+      "price": "45.00",
+      "cover": "https://letcode.in/assets/images/api.png"
+    }
+  ]
+}

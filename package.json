@@ -7,6 +7,7 @@
     "test": "npx playwright test",
     "test-us": "npx playwright test --update-snapshots",
     "report": "npx playwright show-report",
+    "book-api": "npx json-server ./tests/api-testing/booksApi.json --port 3000",
     "test:qa": "cross-env TEST_ENV=test npx playwright test",
     "test:prod": "cross-env TEST_ENV=prod npx playwright test"
   },
