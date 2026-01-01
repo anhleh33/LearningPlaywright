@@ -14,13 +14,13 @@ test.describe("Test Annotation", () => {
         console.log("second test completed")
     })
 
-    test.only("second test only", async ({ page }) => {
-        test.fail()
-        console.log("second test running")
-        await page.goto("https://playwright.dev/")
-        console.log("second test completed")
-        await expect(await page.title()).toBe("Fast and reliable end-to-end testing for modern web apps | Playwright")
-    })
+    // test.only("second test only", async ({ page }) => {
+    //     test.fail()
+    //     console.log("second test running")
+    //     await page.goto("https://playwright.dev/")
+    //     console.log("second test completed")
+    //     await expect(await page.title()).toBe("Fast and reliable end-to-end testing for modern web apps | Playwright")
+    // })
 
     test("third test", async ({ page, browserName }) => {
         console.log("Name: " + browserName)

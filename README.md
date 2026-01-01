@@ -64,3 +64,9 @@ npm test tests/parallel.test.ts
 ```
 npm install clipboardy --save-dev
 ```
+# Install ADM-Zip
+```
+npm install adm-zip --save-dev
+npm install @types/adm-zip --save-dev
+```
+Use it to export a result report, but just available only when running command for test

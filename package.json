@@ -14,9 +14,11 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.57.0",
+    "@types/adm-zip": "^0.5.7",
     "@types/jest": "^29.5.14",
     "@types/node": "^24.10.1",
     "@types/nodemailer": "^7.0.4",
+    "adm-zip": "^0.5.16",
     "allure-commandline": "^2.36.0",
     "allure-playwright": "^3.4.3",
     "clipboardy": "^2.3.0",

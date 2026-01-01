@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import path from 'path';
 
 /**
  * Read environment variables from file.
@@ -25,12 +26,13 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
   reporter: [
-    ['html'], // HTML Reporter
+    ['html', { open: 'never' }], // HTML Reporter
     // ['json', { outputFile: 'test-results.json' }], // JSON Reporter
     // ['junit', { outputFile: 'results.xml' }] // JUnit Reporter
     // ['./tests/MyReporter/myReporter.ts'],
     ['allure-playwright']
   ],
+  globalTeardown: './global-teardown/global-teardown.ts',
   // timeout: 20000,
   // testMatch: ["basicVerification.test.ts"],
   // reporter: [["dot"], ["json", { outputFile: "test-result.json" }]],
@@ -46,9 +48,9 @@ export default defineConfig({
     trace: 'on', 
     screenshot: "only-on-failure",
     video: "retain-on-failure",
-    launchOptions: {
-      slowMo: 5000
-    },
+    // launchOptions: {
+    //   slowMo: 5000
+    // },
     // baseURL: 'https://letcode.in'
   },
   // grep: [new RegExp("@reg")],
