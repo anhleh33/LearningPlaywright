@@ -26,13 +26,13 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
   reporter: [
-    ['html', { open: 'never' }], // HTML Reporter
+    ['html'], // HTML Reporter
     // ['json', { outputFile: 'test-results.json' }], // JSON Reporter
     // ['junit', { outputFile: 'results.xml' }] // JUnit Reporter
     // ['./tests/MyReporter/myReporter.ts'],
     ['allure-playwright']
   ],
-  globalTeardown: './global-teardown/global-teardown.ts',
+  // globalTeardown: './global-teardown/global-teardown.ts',
   // timeout: 20000,
   // testMatch: ["basicVerification.test.ts"],
   // reporter: [["dot"], ["json", { outputFile: "test-result.json" }]],

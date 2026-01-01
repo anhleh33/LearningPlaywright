@@ -70,3 +70,4 @@ npm install adm-zip --save-dev
 npm install @types/adm-zip --save-dev
 ```
 Use it to export a result report, but just available only when running command for test
+However, I think it's unescessary, cause after running, it has a playwright report folder and I just zip it into a file
