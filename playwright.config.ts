@@ -33,6 +33,7 @@ export default defineConfig({
     ['allure-playwright']
   ],
   // globalTeardown: './global-teardown/global-teardown.ts',
+  globalSetup: 'running-mulitiple-enviroment/global-setup.ts',
   // timeout: 20000,
   // testMatch: ["basicVerification.test.ts"],
   // reporter: [["dot"], ["json", { outputFile: "test-result.json" }]],

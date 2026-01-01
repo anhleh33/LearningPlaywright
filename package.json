@@ -6,7 +6,9 @@
   "scripts": {
     "test": "npx playwright test",
     "test-us": "npx playwright test --update-snapshots",
-    "report": "npx playwright show-report"
+    "report": "npx playwright show-report",
+    "test:qa": "cross-env TEST_ENV=test npx playwright test",
+    "test:prod": "cross-env TEST_ENV=prod npx playwright test"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +24,8 @@
     "allure-commandline": "^2.36.0",
     "allure-playwright": "^3.4.3",
     "clipboardy": "^2.3.0",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.3",
     "jest": "^30.2.0",
     "tesseract.js": "^7.0.0",
     "ts-jest": "^29.4.6",

@@ -76,3 +76,9 @@ However, I think it's unescessary, cause after running, it has a playwright repo
 ```
 npm install tesseract.js --save-dev
 ```
+
+# Insall dotenv and cross-env
+```
+npm install dotenv --save-dev
+npm install cross-env --save-dev
+```
