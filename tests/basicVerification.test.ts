@@ -39,3 +39,23 @@ test("Basic UI Verification - Radio", async({page}) => {
     }
     else throw new Error("Element not found")
 })
+
+test("Get CSS Value (Computed Style)", async ({ page }) => {
+    await page.goto("https://letcode.in/button");
+
+    // 1. Locate the element
+    const button = page.locator("#home");
+
+    // 2. Use evaluate to run JavaScript in the browser
+    const color = await button.evaluate((element) => {
+        // Native JS method to get all styles
+        // 'element' here refers to the button we located above
+        return window.getComputedStyle(element).getPropertyValue("background-color");
+    });
+
+    console.log(`Button Color: ${color}`);
+
+    // 3. Assertion
+    // Note: Browsers usually return colors in 'rgb(...)' format
+    expect(color).toBe("rgb(39, 71, 84)"); 
+});
