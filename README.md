@@ -31,13 +31,17 @@ Check Allure version
 ```
 allure --version
 ```
-View Allure report (must already have tests before)
-```
-allure serve allure-results
-```
 Install Allure commandline
 ```
 npm install allure-commandline --save-dev
+```
+Run test with Allure
+```
+npx playwright test --reporter=line,allure-playwright
+```
+View Allure report (must already have tests before)
+```
+allure serve allure-results
 ```
 
 # Install Winston Logger
