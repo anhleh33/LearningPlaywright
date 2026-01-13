@@ -8,7 +8,7 @@ test('Locators', async ({ page }) => {
     await dropdown.selectOption({ label: 'Orange' });
 });
 
-test('test', async ({ page }) => {
+test('test codeg', async ({ page }) => {
   await page.goto('https://dkq832w8boiiy.cloudfront.net/#/login');
   await page.getByRole('textbox', { name: 'Enter Username' }).fill('testuser@gmail.com');
   await page.getByRole('textbox', { name: 'Enter Password' }).fill('12345678x@X');
