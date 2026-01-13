@@ -31,13 +31,17 @@ Check Allure version
 ```
 allure --version
 ```
-View Allure report (must already have tests before)
-```
-allure serve allure-results
-```
 Install Allure commandline
 ```
 npm install allure-commandline --save-dev
+```
+Run test with Allure
+```
+npx playwright test --reporter=line,allure-playwright
+```
+View Allure report (must already have tests before)
+```
+allure serve allure-results
 ```
 
 # Install Winston Logger
@@ -64,3 +68,23 @@ npm test tests/parallel.test.ts
 ```
 npm install clipboardy --save-dev
 ```
+
+# Install ADM-Zip
+```
+npm install adm-zip --save-dev
+npm install @types/adm-zip --save-dev
+```
+Use it to export a result report, but just available only when running command for test
+However, I think it's unescessary, cause after running, it has a playwright report folder and I just zip it into a file
+
+# Install Tesseract 
+```
+npm install tesseract.js --save-dev
+```
+
+# Insall dotenv and cross-env
+```
+npm install dotenv --save-dev
+npm install cross-env --save-dev
+```
+

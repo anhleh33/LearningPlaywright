@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import path from 'path';
 
 /**
  * Read environment variables from file.
@@ -31,6 +32,8 @@ export default defineConfig({
     // ['./tests/MyReporter/myReporter.ts'],
     ['allure-playwright']
   ],
+  // globalTeardown: './global-teardown/global-teardown.ts',
+  // globalSetup: './tests/running-mulitiple-enviroment/global-setup.ts',
   // timeout: 20000,
   // testMatch: ["basicVerification.test.ts"],
   // reporter: [["dot"], ["json", { outputFile: "test-result.json" }]],

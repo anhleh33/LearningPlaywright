@@ -7,7 +7,13 @@
     "test": "npx playwright test",
     "test-us": "npx playwright test --update-snapshots",
     "report": "npx playwright show-report",
+<<<<<<< HEAD
     "codegen": "npx playwright codegen"
+=======
+    "book-api": "npx json-server ./tests/api-testing/booksApi.json --port 3000",
+    "test:qa": "cross-env TEST_ENV=test npx playwright test",
+    "test:prod": "cross-env TEST_ENV=prod npx playwright test"
+>>>>>>> 1c961256c779e86aa6b6db5ccb4a3c1d1a69a835
   },
   "keywords": [],
   "author": "",
@@ -15,13 +21,18 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.57.0",
+    "@types/adm-zip": "^0.5.7",
     "@types/jest": "^29.5.14",
     "@types/node": "^24.10.1",
     "@types/nodemailer": "^7.0.4",
+    "adm-zip": "^0.5.16",
     "allure-commandline": "^2.36.0",
     "allure-playwright": "^3.4.3",
     "clipboardy": "^2.3.0",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.3",
     "jest": "^30.2.0",
+    "tesseract.js": "^7.0.0",
     "ts-jest": "^29.4.6",
     "winston": "^3.19.0"
   },
