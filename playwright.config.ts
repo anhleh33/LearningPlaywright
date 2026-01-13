@@ -49,9 +49,9 @@ export default defineConfig({
     trace: 'on', 
     screenshot: "only-on-failure",
     video: "retain-on-failure",
-    // launchOptions: {
-    //   slowMo: 5000
-    // },
+    launchOptions: {
+      slowMo: 5000
+    },
     // baseURL: 'https://letcode.in'
   },
   // grep: [new RegExp("@reg")],
